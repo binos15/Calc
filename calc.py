@@ -13,10 +13,8 @@ def check_yn(n):
         print("Enter only y or n.")
         return False
 
-current = 0
 with open('now.txt') as now: #current money
-  for line in now:
-      current += int(line)
+  current = int(now.readline())
 
 print(current)
 
